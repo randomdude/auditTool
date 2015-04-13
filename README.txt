@@ -9,17 +9,12 @@ It will also store drive boot sectors and verify them.
 The usual workflow is to install and configure a machine, check in changes to SVN, and then use it for periodic auditing.
 
 It takes a (python) configuration file for each host, for example:
+
 	targetname = 'backup'
-
 	bootsectors = [ 'sde', 'sde1' ]
-
 	targetroot = '/mnt/target'
-
 	archstr = 'i386'
-
 	repopath= 'file:///root/syschanges'
-
 	editor = 'nano'
-
 
 'targetname' is a friendly name of the system, and 'repopath' is a repository path to pass to svn. 'targetroot' is the location that the system to audit is mounted at.
